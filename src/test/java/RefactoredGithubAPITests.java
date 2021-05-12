@@ -77,7 +77,10 @@ public class RefactoredGithubAPITests {
     @Title("getRepositoryIssues")
     @Test
     public void getRepositoryIssues() {
-        new GithubAPIRequestService().getRepositoryIssues().then().statusCode(200);
+        new GithubAPIRequestService()
+                .getRepositoryIssues()
+                .then()
+                .statusCode(200);
     }
 
     @Title("getUserEmails")
